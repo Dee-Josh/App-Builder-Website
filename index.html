@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dee-App || Home</title>
 
+    <!-- FAVICON -->
+    <link rel="alternate" href="" type="application/atom+xml" title="Atom">
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="./CSS/swiper-bundle.min.css">
+
     <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/all.min.css">
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
@@ -77,17 +85,76 @@
     <div class="works" id="works">
         <div class="container">
 
-            <h2>We have built professional and visually stunning apps used all over the world.</h2>
+            <h1>We build professional and visually stunning apps used all over the world.</h1>
             <!-- Slide display of mock icons for apps -->
             <div class="app-icons">
-                
+                <div>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
             </div>
             
             <!-- WORK DISPLAY -->
             <!-- Using swiper.js -->
             
             <div class="work-display">
-                
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="scroll">
+                            <img src="./Img/Project-img.png" alt="project-display">
+                            <p class="project-name">Project Name</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="scroll">
+                            <img src="./Img/Project-img.png" alt="project-display">
+                            <p class="project-name">Project Name</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="scroll">
+                            <img src="./Img/Project-img.png" alt="project-display">
+                            <p class="project-name">Project Name</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="scroll">
+                            <img src="./Img/Project-img.png" alt="project-display">
+                            <p class="project-name">Project Name</p>
+                        </div>
+                      </div>
+                      <!-- Add more slides as needed -->
+                    </div>
+            
+                    <!-- SWIPER CONTROL -->
+
+                    <div class="swiper-control">
+                        <div class="control">
+                            <div class="right-cont">
+                                <div class="swiper-button-next"></div>
+                            </div>
+                            <div class="left-cont">
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -257,6 +324,7 @@
         </div>
     </div>
      
+    <script src="./swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>

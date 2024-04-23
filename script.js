@@ -59,41 +59,37 @@ setInterval(() => {
     }
 }, 100);
 
-// setInterval(() => {
-//     if(isAtTheTop(home)){
-//         allNavLinks.forEach(link=>{
-//             link.classList.remove("active-link")
-//         })
-//     } else if(isAtTheTop(workContainer)){
-//         allNavLinks.forEach(link=>{
-//             link.classList.remove("active-link")
-//         })
-//         allNavLinks[0].classList.add("active-link");
-//         console.log(true, allNavLinks, allNavLinks[0]);
-//     }else if(isAtTheTop(experinece)){
-//         allNavLinks.forEach(link=>{
-//             link.classList.remove("active-link")
-//         })
-//         allNavLinks[1].classList.add("active-link");
-//         bac2top.style.display = "flex";
-//     }else if(isAtTheTop(portfolio)){
-//         allNavLinks.forEach(link=>{
-//             link.classList.remove("active-link")
-//         })
-//         allNavLinks[2].classList.add("active-link");
-//         bac2top.style.display = "flex";
-//     }else if(isAtTheTop(podcast)){
-//         allNavLinks.forEach(link=>{
-//             link.classList.remove("active-link")
-//         })
-//         allNavLinks[3].classList.add("active-link");
-//         bac2top.style.display = "flex";
-//     }else if(isAtTheTop(contact)){
-//         allNavLinks.forEach(link=>{
-//             link.classList.remove("active-link")
-//         })
-//         allNavLinks[4].classList.add("active-link");
-//         bac2top.style.display = "flex";
-//     }
 
-// }, 100);
+// FOR SWIPER
+
+
+// SWIPER
+
+var swiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    slidesPerView: 1,
+    spaceBetween: 1000,
+
+    // Auto scroll
+
+    autoplay: {
+    delay: 5000, // Adjust the delay in milliseconds (5 seconds in this example)
+    disableOnInteraction: false, // Continue autoplay even when user interacts with the slider
+    },
+
+    // If you need pagination
+    pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    },
+   
+    // Navigation arrows
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+    on: {
+        slideChange: function () {
+        }
+    },
+});
