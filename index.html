@@ -17,25 +17,27 @@
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
+    <div class="everything">
 
-    <!-- HERO SECTION -->
+        
+        <!-- HERO SECTION -->
 
-    <div class="hero-section">
+    <div class="hero-section" id="home">
         <div class="header">
             <div class="container">
                 <ul>
-                    <li>Dee-App</li>
-                    <li>Work</li>
-                    <li>Services</li>
-                    <li>Prices</li>
-                    <li>Blog</li>
-                    <li>Contact</li>
+                    <a class="nav-link" href="/"><li>Dee-App</li></a>
+                    <a class="nav-link" href="#works"><li>Work</li></a>
+                    <a class="nav-link" href="#services"><li>Services</li></a>
+                    <a class="nav-link" href="#prices"><li>Prices</li></a>
+                    <a class="nav-link" href="#blog"><li>Blog</li></a>
+                    <a class="nav-link" href="#contact"><li>Contact</li></a>
                 </ul>
             </div>
         </div>
 
         <!-- HERO SECTION CONTENT -->
-
+        
         <div class="hero-section-content">
             <div class="container">
                 <div class="left">
@@ -81,44 +83,44 @@
     </div>
 
     <!-- WORKS -->
-
+    
     <div class="works" id="works">
         <div class="container">
-
-            <h1>We build professional and visually stunning apps used all over the world.</h1>
+            
+            <h1 class="works-h1">We build professional and visually stunning apps used all over the world.</h1>
             <!-- Slide display of mock icons for apps -->
             <div class="app-icons">
                 <div>
                     <i class="fa-brands fa-facebook"></i>
                 </div>
                 <div>
-                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
                 </div>
                 <div>
-                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-linkedin"></i>
                 </div>
                 <div>
-                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
                 </div>
                 <div>
-                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-youtube"></i>
                 </div>
                 <div>
-                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-github"></i>
                 </div>
             </div>
             
             <!-- WORK DISPLAY -->
             <!-- Using swiper.js -->
             
-            <div class="work-display">
+            <div class="work-display" style="display: none;">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="scroll">
-                            <img src="./Img/Project-img.png" alt="project-display">
-                            <p class="project-name">Project Name</p>
-                        </div>
+                        <div class="swiper-slide">
+                            <div class="scroll">
+                                <img src="./Img/Project-img.png" alt="project-display">
+                                <p class="project-name">Project Name</p>
+                            </div>
                       </div>
                       <div class="swiper-slide">
                         <div class="scroll">
@@ -158,10 +160,10 @@
             </div>
         </div>
     </div>
-
+    
     <!-- SERVICES -->
-
-    <div class="services">
+    
+    <div class="services" id="services">
         <div class="container">
             <h2>Our Services</h2>
             <p>All the world class works that we will be delivering.</p>
@@ -183,7 +185,7 @@
                 <div class="service">
                     <h3>Development</h3>
                     <p>
-                       Turn your app ideas into reality with our tailored developemt solutions. From concept to launch, we deliver high-quality, user-freindly apps for IOS, Andriod, and cross-platform needs.
+                        Turn your app ideas into reality with our tailored developemt solutions. From concept to launch, we deliver high-quality, user-freindly apps for IOS, Andriod, and cross-platform needs.
                     </p>
                 </div>
             </div>
@@ -192,25 +194,25 @@
     </div>
 
     <!-- PRICES -->
-
-    <div class="prices">
+    
+    <div class="prices" id="prices">
         <div class="container">
             <h2>Choose the right plan</h2>
             <p>Transparent pricing, with plans that match your needs.</p>
-
+            
             <div class="for-choice">
                 <p>Monthly</p>
                 <div class="outer"><div class="inner"></div></div>
                 <p>Yearly</p>
             </div>
             <p>Get 50% off with yearly plan</p>
-
+            
             <div class="prices-display">
                 <div class="price">
                     <p>Standard</p>
                     <h1>$500</h1>
                     <p>per month</p>
-
+                    
                     <ul>
                         <li>1 Project</li>
                         <li>Analytics</li>
@@ -236,7 +238,7 @@
                     <p>Business</p>
                     <h1>$2000</h1>
                     <p>per month</p>
-
+                    
                     <ul>
                         <li>Unlimited Project</li>
                         <li>Analytics</li>
@@ -248,18 +250,18 @@
             </div>
         </div>
     </div>
-
+    
     <!-- BLOG -->
-
-    <div class="blog">
+    
+    <div class="blog" id="blog">
         <div class="container">
             <h2>Our Blog</h2>
             <p>Latest stories from the digital world</p>
-
+            
             <div class="blog-details">
                 <div class="latest-post">
                     <p>Latest Post</p>
-
+                    
                     <div class="post-details">
                         <p class="date">April 2, 2023</p>
                         <p class="title">Starting and growing a Career in Web Design</p>
@@ -287,15 +289,15 @@
     </div>
 
     <!-- CONTACT -->
-
-    <div class="contact">
+    
+    <div class="contact" id="contact">
         <div class="container">
             <div class="top-display">
                 <img src="" alt="">Image of phone with ?????
                 <h3>Ready for your next project?</h3>
-
+                
                 <button>Get in touch</button>
-
+                
                 <footer>
                     <div class="left">
                         <h1>Dee-App</h1>
@@ -313,7 +315,7 @@
                             <li>Social media</li>
                             <li>
                                 X/Twitter</li>
-                            <li>Youtube</li>
+                                <li>Youtube</li>
                             <li>Instagram</li>
                             <li>Threads</li>
                         </ul>
@@ -323,8 +325,9 @@
             </div>
         </div>
     </div>
-     
+    
     <script src="./swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
+</div>
 </body>
 </html>
