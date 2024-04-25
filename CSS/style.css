@@ -156,6 +156,7 @@ h3{
   padding: 10px 30px;
   border: none;
   border-radius: 30px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
