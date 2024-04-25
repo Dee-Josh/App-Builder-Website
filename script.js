@@ -109,3 +109,16 @@ var swiper = new Swiper('.swiper-container', {
         }
     },
 });
+
+
+// FOR MANUAL CHOUCE BAR
+
+const bar = document.querySelector(".outer");
+const monthly = document.querySelector(".monthly");
+const yearly = document.querySelector(".yearly");
+
+bar.addEventListener("click", ()=>{
+    bar.classList.toggle('move');
+    monthly.classList.toggle('bold');
+    yearly.classList.toggle('bold');
+})
