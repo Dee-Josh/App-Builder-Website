@@ -28,6 +28,8 @@ function isAtTheTop(element){
 }
 
 const worksH1 = document.querySelector(".works-h1");
+const appIcons = document.querySelector(".app-icons");
+const workDisplay = document.querySelector(".work-display");
 
 document.addEventListener("DOMContentLoaded", function() {
     console.log("working");
@@ -43,9 +45,17 @@ document.addEventListener("DOMContentLoaded", function() {
                 link.classList.remove("active-link")
             })
             allNavLinks[0].classList.add("active-link");
-            
+
+            // Animation when the work container comes into view
             worksH1.style.top = 0;
+            setTimeout(() => {
+                appIcons.style.right = 0;
+            }, 3000);
+            setTimeout(() => {
+                workDisplay.style.visibility = "visible";
+            }, 7000);
         }else if (isAtTheTop(servicesContainer)) {
+            console.log(3);
             allNavLinks.forEach(link=>{
                 link.classList.remove("active-link")
             })

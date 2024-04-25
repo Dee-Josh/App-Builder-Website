@@ -366,12 +366,12 @@ h3{
   -moz-box-shadow: 0px -31px 56px 1px rgba(0,0,0,0.75);
   position: relative;
   width: 100%;
-  min-height: 100vh;
   background-color: var(--color-light);
   margin-top: 40px;
   /* border: 10px solid red; */
   padding-top: 120px;
   overflow: hidden;
+  height: 200vh;
 }
 
 .works h1{
@@ -390,14 +390,75 @@ h3{
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
+  position: relative;
+  right: -120%;
+  transition: all 4.5s;
 }
 
 .app-icons i{
   font-size: 70px;
 }
 
+/* STYLING WORK DISPLAY SCROLL */
+
 .work-display{
-  height: 100vh;
+  margin-top: 90px;
+  position: relative;
+  margin-bottom: 60px;
+  visibility: hidden;
+  transition: all 3s;
+} 
+
+.scroll{
+  border-radius: 30px;
+  overflow: hidden;
+  height: 95vh;
 }
 
+.project-name{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  padding: 5px 10px;
+  border-radius: 100px;
+  font-size: var(--h3-font-size);
+}
+  
+/* SERVICES */
 
+.services{
+  padding-top: 40px;
+}
+.services h2{
+  text-align: center;
+  font-size: calc(var(--h1-font-size) + 2px);
+  margin-top: 55px;
+}
+
+.services-des{
+  text-align: center;
+  margin-top: 0px;
+}
+
+.service-display{
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 25px;
+}
+
+.service{
+  border-left: 3px solid var(--color-dark);
+  padding-left: 20px;
+}
+
+.services .get-btn{
+  display: block;
+  margin: 60px auto;
+  /* margin-bottom: 0; */
+  font-size: var(--h3-font-size);
+  
+}
