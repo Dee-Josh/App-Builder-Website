@@ -640,30 +640,68 @@ h3{
 
 
 
-
-
-
-
-
-/* CONTACT SECTION */
+/* Ready for next project */
 
 .contact{
   padding-top: 90px;
+  background: linear-gradient(white, rgb(1, 1, 67));
+  margin-top: 30px;
+  padding-bottom: 30px;
 }
 
-/* Ready for next project */
-
-.top-display{
-  text-align: center;
-  background: linear-gradient(rgb(1, 1, 67), white);
-}
-
-.top-display img{
+.contact img{
   height: 75vh;
   border-radius: 30px;
 }
 
-.top-display h3{
-  font-size: 50px;
-  /* color: w; */
+.contact h3{
+  font-size: 45px;
+  color: white;
+  margin-top: 25px;
+}
+
+.contact button{
+  background-color: #fff;
+  color: var(--color-dark);
+  padding: 10px 45px;
+  margin-top: 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  border: none;
+}
+
+
+.top-display{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+footer{
+  color: #fff;
+  margin-top: 70px;
+}
+
+.footer-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-top .left h1{
+  font-size: 110px;
+}
+
+.right{
+  display: flex;
+  gap: 200px;
+}
+
+footer p{
+  border-top: 2px solid white;
+  padding-top: 30px;
+  margin-top: 30px;
+}
+
+footer p a{
+  color: white;
 }
