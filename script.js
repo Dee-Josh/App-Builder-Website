@@ -116,9 +116,136 @@ var swiper = new Swiper('.swiper-container', {
 const bar = document.querySelector(".outer");
 const monthly = document.querySelector(".monthly");
 const yearly = document.querySelector(".yearly");
+let trackChoice = true; // True represents monthly
 
 bar.addEventListener("click", ()=>{
     bar.classList.toggle('move');
     monthly.classList.toggle('bold');
     yearly.classList.toggle('bold');
+    if (trackChoice) {
+        activateChange(yearlyChoice)
+    }else{
+        activateChange(monthlyChoice)
+    }
+    trackChoice = !(trackChoice);
 })
+
+const priceDisplayContainer = document.querySelector(".prices-display");
+
+function activateChange(current) {
+    priceDisplayContainer.innerHTML=`
+        <div class="price">
+            <p>${current[0].type}</p>
+            <h1>${current[0].price}</h1>
+            <p>per ${current[0].choice}</p>
+            
+            <ul>
+                <li><i class="fa-solid fa-circle-check"></i>${current[0].details[0]}</li>
+                <li><i class="fa-solid fa-circle-check"></i> ${current[0].details[1]}</li>
+                <li><i class="fa-solid fa-circle-check"></i> ${current[0].details[2]}</li>
+                <li><i class="fa-solid fa-circle-check"></i>${current[0].details[3]}</li>
+            </ul>
+            <button class="get-btn">Get in touch</button>
+        </div>
+        <div class="price">
+            <p>${current[1].type}</p>
+            <h1>${current[1].price}</h1>
+            <p>per ${current[0].choice}</p>
+
+            <ul>
+                <li><i class="fa-solid fa-circle-check"></i>${current[1].details[0]}</li>
+                <li><i class="fa-solid fa-circle-check"></i>${current[1].details[1]}</li>
+                <li><i class="fa-solid fa-circle-check"></i>${current[1].details[2]}</li>
+                <li><i class="fa-solid fa-circle-check"></i>${current[1].details[3]}</li>
+                </ul>
+            <button class="get-btn">Get in touch</button>
+        </div>
+        <div class="price">
+            <p>${current[2].type}</p>
+            <h1>${current[2].price}</h1>
+            <p>per ${current[0].choice}</p>
+            
+            <ul>
+            <li><i class="fa-solid fa-circle-check"></i>${current[2].details[0]}</li>
+            <li><i class="fa-solid fa-circle-check"></i>${current[2].details[1]}</li>
+            <li><i class="fa-solid fa-circle-check"></i>${current[2].details[2]}</li>
+            <li><i class="fa-solid fa-circle-check"></i>${current[2].details[3]}</li>
+            </ul>
+            <button class="get-btn">Get in touch</button>
+        </div>
+    `
+}
+                
+                
+// Changing Choice Options from the Choice Bar
+
+
+const monthlyChoice = [
+    {
+        choice: "month",
+        type: 'Standard',
+        price: '$500',
+        details: [
+            "1 Project",
+            "Analytics",
+            "Insight Panel",
+            "Share Features"
+        ]
+    },
+    {
+        type: 'Professional',
+        price: '$1000',
+        details: [
+            "2 Project",
+            "Analytics",
+            "Insight Panel",
+            "Share Features"
+        ]
+    },
+    {
+        type: 'Business',
+        price: '$2000',
+        noOfProject: 1,
+        details: [
+            "Unlimited Project",
+            "Analytics",
+            "Insight Panel",
+            "Share Features"
+        ]
+    },
+]
+
+const yearlyChoice = [
+    {
+        choice: "year",
+        type: 'Standard',
+        price: '$3000',
+        details: [
+            "12 Project",
+            "Analytics",
+            "Insight Panel",
+            "Share Features"
+        ]
+    },
+    {
+        type: 'Professional',
+        price: '$6000',
+        details: [
+            "24 Project",
+            "Analytics",
+            "Insight Panel",
+            "Share Features"
+        ]
+    },
+    {
+        type: 'Business',
+        price: '$12000',
+        details: [
+            "Unlimited Project",
+            "Analytics",
+            "Insight Panel",
+            "Share Features"
+        ]
+    },
+]
+
