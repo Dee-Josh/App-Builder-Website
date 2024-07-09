@@ -592,7 +592,7 @@ h3{
 .latest-post-inner{
   position: relative;
   overflow: hidden;
-  border-radius: 40px;
+  border-radius: 30px;
 }
 
 .latest-post-p{
@@ -640,7 +640,7 @@ h3{
 
 
 
-/* Ready for next project */
+/* CONTACT */
 
 .contact{
   padding-top: 90px;
